@@ -5,7 +5,8 @@
 // scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova
 // 
 
-var listaCognomi = ["Bianchi", 
+var listaCognomi = [
+"Bianchi", 
 "Rossi", 
 "Duzioni", 
 "Balsano", 
@@ -16,13 +17,13 @@ var userCognome = prompt("Inserisci il tuo cognome");
 var newSurname = userCognome;
 listaCognomi.push(newSurname);
 var userPosition
+
 for( i= 0; i< listaCognomi.length; i++){
-
+    var itemList = listaCognomi.sort()[i];
     var contenutoLista = document.getElementById("lista-cognomi").innerHTML;   
-    document.getElementById("lista-cognomi").innerHTML =  "<li>" + listaCognomi.sort() + "</li>";
+    document.getElementById("lista-cognomi").innerHTML = contenutoLista +  "<li>" + itemList + "</li>";
     
-}
 userPosition = document.getElementById("user-position").innerHTML = "La tua posizione in coda è la n. : " + (listaCognomi.indexOf(newSurname) + 1);
-
+}
 
 console.log(listaCognomi, userPosition);
