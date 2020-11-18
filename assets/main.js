@@ -5,7 +5,13 @@
 // scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova
 // 
 
-var listaCognomi = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"].sort();
+var listaCognomi = ["Bianchi", 
+"Rossi", 
+"Duzioni", 
+"Balsano", 
+"Verdi"
+];
+
 var userCognome = prompt("Inserisci il tuo cognome");
 var newSurname = userCognome;
 listaCognomi.push(newSurname);
