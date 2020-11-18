@@ -16,6 +16,7 @@ for( i= 0; i< listaCognomi.length; i++){
     document.getElementById("lista-cognomi").innerHTML =  "<li>" + listaCognomi.sort() + "</li>";
     
 }
-console.log(listaCognomi.indexOf(newSurname));
-
 userPosition = document.getElementById("user-position").innerHTML = "La tua posizione in coda è la n. : " + (listaCognomi.indexOf(newSurname) + 1);
+
+
+console.log(listaCognomi, userPosition);
