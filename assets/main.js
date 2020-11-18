@@ -14,7 +14,7 @@ var listaCognomi = [
 ];
 
 var userCognome = prompt("Inserisci il tuo cognome");
-var newSurname = userCognome;
+var newSurname = userCognome.charAt(0).toUpperCase() + userCognome.slice(1);
 listaCognomi.push(newSurname);
 var userPosition
 
